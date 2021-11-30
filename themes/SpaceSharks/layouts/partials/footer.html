@@ -4,6 +4,8 @@
     <div class="page-info">
 	<div>Published: <time>{{ .PublishDate }}</time></div>
 	<div>Last modified: <time>{{ .Lastmod }}</time></div>
+	{{ if .GitInfo }}
 	<div>Commit {{ .GitInfo.Hash }}: {{ .GitInfo.Subject }} </div>
+	{{ end }}
 	<div>Site last change: <time>{{ .Site.LastChange }}</time></div>
 </footer>
