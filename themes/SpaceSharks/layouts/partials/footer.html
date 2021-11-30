@@ -1,0 +1,9 @@
+<hr />
+<footer class="page-footer">
+    <p class="copyright">{{ .Site.Copyright }}</p>
+    <div class="page-info">
+	<div>Published: <time>{{ .PublishDate }}</time></div>
+	<div>Last modified: <time>{{ .Lastmod }}</time></div>
+	<div>Commit {{ .GitInfo.Hash }}: {{ .GitInfo.Subject }} </div>
+	<div>Site last change: <time>{{ .Site.LastChange }}</time></div>
+</footer>
