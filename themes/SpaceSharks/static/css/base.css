@@ -25,3 +25,23 @@
     --color-yellow-30: #a44322;
     --color-yellow-10: #f8bc04;
 }
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.card-full-page {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-navigation {
+    display: flex;
+}
